@@ -46,7 +46,7 @@ static getByIdListas = (req, res) => {
   });
 };
 
-static deletelistas = (req, res) => {
+static deleteListas = (req, res) => {
   const id = req.params.id;
 
   listas.findByIdAndDelete(id, (err) => {
@@ -70,3 +70,5 @@ static deleteAllListas = async (req, res) => {
 };
 
 }
+
+export default ListaController;
